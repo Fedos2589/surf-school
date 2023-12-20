@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Instructor {
+  id: String!
+  name: String!
+  experience: Int
+}
+
+type Query {
+  instructors: [Instructor!]!
+  getInstructor(id: String!): Instructor!
+}
+
+type Mutation {
+  createInstructor(instructor: CreateInstructorInput!): Instructor!
+}
+
+input CreateInstructorInput {
+  name: String!
+  experience: Int
+}
